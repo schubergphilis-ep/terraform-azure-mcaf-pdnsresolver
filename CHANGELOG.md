@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.0](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/compare/v0.2.4...v1.0.0) (2026-07-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove rsg creation ([#2](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/issues/2))
+
+### chore
+
+* remove rsg creation ([#2](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/issues/2)) ([00c90cf](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/commit/00c90cf3511532dc21ae96c8efc9a4606593de07))
+
 ## [0.2.4](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/compare/v0.2.3...v0.2.4) (2025-05-20)
 
 
@@ -93,4 +104,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * firstversion ([#2](https://github.com/schubergphilis/terraform-azure-mcaf-pdnsresolver/pull/2)) ([363c80f](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/commit/363c80f6fef6381f45b95925c5b40f20a90e8f0f))
 * firstversion ([#2](https://github.com/schubergphilis/terraform-azure-mcaf-pdnsresolver/pull/2)) ([363c80f](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/commit/363c80f6fef6381f45b95925c5b40f20a90e8f0f))
-

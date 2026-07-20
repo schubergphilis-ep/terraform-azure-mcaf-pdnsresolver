@@ -1,16 +1,18 @@
+variable "resource_group_name" {
+  description = "Resource group name"
+  type        = string
+}
+
+variable "location" {
+  description = "location"
+  type        = string
+}
+
 variable "tags" {
   description = "A map of tags to assign to the resource."
   type        = map(string)
 
   default = {}
-}
-
-variable "resource_group" {
-  description = "Resource group configuration"
-  type = object({
-    name     = string
-    location = string
-  })
 }
 
 variable "private_dns_resolver" {

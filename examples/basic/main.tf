@@ -12,10 +12,8 @@ terraform {
 module "pdns_resolver" {
   source = "../../"
 
-  resource_group = {
-    name     = "example-resource-group"
-    location = "eastus"
-  }
+  resource_group_name     = "example-resource-group"
+  location = "eastus"
 
   private_dns_resolver = {
     name                 = "example-dns-resolver"

@@ -9,7 +9,6 @@ resource "azurerm_private_dns_resolver" "this" {
 
 resource "azurerm_private_dns_resolver_inbound_endpoint" "this" {
   name                    = var.private_dns_resolver_inbound_endpoint.name
-  resource_group_name     = var.resource_group_name
   location                = var.location
   private_dns_resolver_id = azurerm_private_dns_resolver.this.id
 

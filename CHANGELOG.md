@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/compare/v1.0.0...v1.0.1) (2026-07-21)
+
+
+### 🐛 Fixes
+
+* remove resource group from inbound endpoint ([#4](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/issues/4)) ([a9bb324](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/commit/a9bb32473b40df5acb14b37d024b574e68c8f2f9))
+
 ## [1.0.0](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/compare/v0.2.4...v1.0.0) (2026-07-20)
 
 

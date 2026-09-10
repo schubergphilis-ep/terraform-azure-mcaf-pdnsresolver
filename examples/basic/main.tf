@@ -40,10 +40,20 @@ module "pdns_resolver" {
   private_dns_resolver_forwarding_rulesets = {
     ruleset1 = {
       forwarding_rules = {
+        # The map key becomes the name of the forwarding rule. A ruleset holds up to
+        # 1000 rules, so several rules per ruleset is the normal case.
         rule1 = {
-          domain_name = "example.com"
+          domain_name = "example.com."
           target_dns_servers = [{
             ip_address = "10.0.0.1"
+            port       = 53
+            }
+          ]
+        }
+        rule2 = {
+          domain_name = "onprem.local."
+          target_dns_servers = [{
+            ip_address = "10.0.0.2"
             port       = 53
             }
           ]

@@ -48,10 +48,10 @@ resource "azurerm_private_dns_resolver_dns_forwarding_ruleset" "this" {
 }
 
 resource "azurerm_private_dns_resolver_forwarding_rule" "this" {
-  for_each = local.private_dns_resolver_forwarding_rulesets
+  for_each = local.private_dns_resolver_forwarding_rules
 
-  name                      = each.value.ruleset_name
-  dns_forwarding_ruleset_id = azurerm_private_dns_resolver_dns_forwarding_ruleset.this[each.key].id
+  name                      = each.value.rule_name
+  dns_forwarding_ruleset_id = azurerm_private_dns_resolver_dns_forwarding_ruleset.this[each.value.ruleset_name].id
   domain_name               = each.value.domain_name
 
   dynamic "target_dns_servers" {

@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.0.0](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/compare/v1.0.1...v2.0.0) (2026-09-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* forwarding rules are now named after their own map key instead of their ruleset's name, and are addressed as .this["<ruleset>/<rule>"] instead of .this["<ruleset>"]. Existing deployments will see each rule replaced; moved blocks cannot express the change because they do not accept for_each.
+
+### 🐛 Fixes
+
+* key forwarding rules per rule rather than per ruleset ([#6](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/issues/6)) ([201a9ec](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/commit/201a9ec54615b0a2a72f3f25498464e671796aa7))
+
 ## [1.0.1](https://github.com/schubergphilis-ep/terraform-azure-mcaf-pdnsresolver/compare/v1.0.0...v1.0.1) (2026-07-21)
 
 
